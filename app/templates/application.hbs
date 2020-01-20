@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<PowerSelect
+        @searchEnabled={{true}}
+        @options={{this.names}}
+        @selected={{this.name}}
+        @onChange={{action (mut this.name)}}
+        @renderInPlace={{true}}
+        @verticalPosition="above" as |name|>
+  {{name}}
+</PowerSelect>

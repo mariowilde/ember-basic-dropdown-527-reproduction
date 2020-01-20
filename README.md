@@ -1,7 +1,12 @@
 # ember-basic-dropdown-527-reproduction
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Minimal reproduction for cibernox/ember-basic-dropdown#527.
+
+Click on the trigger at the bottem to open the result list. Type an "M" into the search bar.
+The dropdown is resized, but the top edge of the dropdown stays put,
+which leads to a gap between the bottom of the dropdown and the top of the trigger.
+  
+Downgrading to ember-basic-dropdown@2.0.11 fixes the issue.
 
 ## Prerequisites
 
